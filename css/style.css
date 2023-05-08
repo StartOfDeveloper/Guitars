@@ -2913,7 +2913,7 @@ footer {
   }
 
   .best-brends__items {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 210px));
     -webkit-column-gap: 77px;
        -moz-column-gap: 77px;
             column-gap: 77px;
@@ -3099,9 +3099,12 @@ footer {
     -webkit-transform: translate(0, -50%) rotate(45deg);
         -ms-transform: translate(0, -50%) rotate(45deg);
             transform: translate(0, -50%) rotate(45deg);
-    -webkit-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
+    will-change: transform;
+    -webkit-transition: top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
+    transition: top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
+    -o-transition: transform 0.1s linear 0s, top 0.1s linear 0s;
+    transition: transform 0.1s linear 0s, top 0.1s linear 0s;
+    transition: transform 0.1s linear 0s, top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
   }
 
   .pages-button-menu::after {
@@ -3115,12 +3118,15 @@ footer {
     -webkit-transform-origin: top right;
         -ms-transform-origin: top right;
             transform-origin: top right;
-    -webkit-transform: translate(-10.7px, -50%) rotate(-45deg);
-        -ms-transform: translate(-10.7px, -50%) rotate(-45deg);
-            transform: translate(-10.7px, -50%) rotate(-45deg);
-    -webkit-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
+    -webkit-transform: translate(-11px, -55%) rotate(-45deg);
+        -ms-transform: translate(-11px, -55%) rotate(-45deg);
+            transform: translate(-11px, -55%) rotate(-45deg);
+    will-change: transform;
+    -webkit-transition: top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
+    transition: top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
+    -o-transition: transform 0.1s linear 0s, top 0.1s linear 0s;
+    transition: transform 0.1s linear 0s, top 0.1s linear 0s;
+    transition: transform 0.1s linear 0s, top 0.1s linear 0s, -webkit-transform 0.1s linear 0s;
   }
 
   .open .product-button-menu::before {
@@ -3154,7 +3160,8 @@ footer {
   .pages-wrapper,
   .product-wrapper {
     overflow: hidden;
-    height: 0;
+    max-height: 0px;
+    will-change: max-height;
     -webkit-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
