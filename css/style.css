@@ -2668,9 +2668,9 @@ footer {
   }
 
   .favorite__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     row-gap: 35px;
   }
 
@@ -2679,9 +2679,9 @@ footer {
   }
 
   .favorite__images {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     width: 100%;
     -webkit-column-gap: 25px;
        -moz-column-gap: 25px;
