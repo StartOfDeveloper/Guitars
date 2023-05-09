@@ -2469,36 +2469,6 @@ footer {
   color: rgba(18, 18, 18, 0.6);
 }
 
-/*@media (max-width: 577.98px) {
-    .info {
-        order: 1;
-    }
-    .pages {
-        order: 3;
-    }
-    .product {
-        order: 4;
-    }
-    .follow {
-        order: 2;
-    }
-}
-@media (max-width: 515.98px) {
-    .info {
-        order: 1;
-    }
-    .pages {
-        order: 3;
-    }
-    .product {
-        order: 4;
-    }
-    .follow {
-        flex: 1 0 100%;
-        order: 2;
-    }
-}*/
-
 @media (max-width: 1229.98px) {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: var(--swiper-pagination-bottom, 8px);
@@ -2983,6 +2953,32 @@ footer {
   }
 }
 
+@media (max-width: 577.98px) {
+  .info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .pages {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .product {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .follow {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 @media (max-width: 567.98px) {
   .header__conteiner {
     -webkit-column-gap: 50px;
@@ -3038,6 +3034,35 @@ footer {
 @media (max-width: 529.98px) {
   .best-brends .check-store__title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 515.98px) {
+  .info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .pages {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .product {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .follow {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
