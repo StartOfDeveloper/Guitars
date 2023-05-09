@@ -3217,7 +3217,12 @@ footer {
   .pages-wrapper,
   .product-wrapper {
     overflow: hidden;
-    max-height: 0px;
+    height: 0px;
+  }
+
+  .open .pages-wrapper,
+  .open .product-wrapper {
+    height: auto;
   }
 
   .pages-items {
