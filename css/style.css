@@ -2746,6 +2746,7 @@ footer {
     z-index: 3;
     -webkit-box-shadow: 0px 0px 5px 5px #FFFFFF;
             box-shadow: 0px 0px 5px 5px #FFFFFF;
+    will-change: left;
   }
 
   .header__conteiner {
@@ -2796,6 +2797,7 @@ footer {
     padding-bottom: 5%;
     overflow-y: auto;
     row-gap: 5rem;
+    will-change: left;
     -webkit-transition: all 0.17s linear 0s;
     -o-transition: all 0.17s linear 0s;
     transition: all 0.17s linear 0s;
@@ -3216,10 +3218,6 @@ footer {
   .product-wrapper {
     overflow: hidden;
     max-height: 0px;
-    will-change: max-height;
-    -webkit-transition: all 0.3s linear 0s;
-    -o-transition: all 0.3s linear 0s;
-    transition: all 0.3s linear 0s;
   }
 
   .pages-items {
