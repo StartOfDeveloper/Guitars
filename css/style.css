@@ -1077,14 +1077,9 @@ body {
   font-style: normal;
   font-weight: 500;
   background-color: #FFFFFF;
-  opacity: 0;
   -webkit-transition: all 1s ease-in 0s;
   -o-transition: all 1s ease-in 0s;
   transition: all 1s ease-in 0s;
-}
-
-body.visable {
-  opacity: 1;
 }
 
 .wrapper {
@@ -1991,6 +1986,12 @@ header {
   color: #000000;
 }
 
+.google__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .app-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2000,8 +2001,13 @@ header {
           column-gap: 11.5px;
 }
 
+.google__image {
+  overflow: hidden;
+  padding-top: 3px;
+}
+
 .google__image img {
-  min-height: 90%;
+  max-width: 100%;
 }
 
 .google__text-top {
@@ -2033,8 +2039,13 @@ header {
   color: #000000;
 }
 
+.apple__image {
+  padding-top: 3px;
+  overflow: hidden;
+}
+
 .apple__image img {
-  min-height: 90%;
+  max-width: 100%;
 }
 
 .apple__text-top {
